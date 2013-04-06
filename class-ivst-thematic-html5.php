@@ -6,7 +6,7 @@
  * use html5 elements
  * 
  * @author Karin Taliga <invistruct@gmail.com>
- * @version 0.3
+ * @version 0.4.1
  * @package Thematic-HTML5
  */
 
@@ -418,8 +418,8 @@ class Ivst_Thematic_Html5 {
 	 * @since 0.1
 	 */
 	function after_widget_area($content) {
-		$content = str_replace( '</ul>', '</div>', $content);
 		$content = str_replace( '</div>', '</aside>', $content);
+		$content = str_replace( '</ul>', '</div><!-- .inner -->', $content);
 		return $content;
 	}
 
